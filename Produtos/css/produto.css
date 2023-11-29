@@ -97,6 +97,11 @@ button {
     font-size: 16px;
 }
 
+.product-details p{
+    text-align: justify;
+    text-indent: 25px;
+}
+
 button:hover {
     background-color: #555;
 }
