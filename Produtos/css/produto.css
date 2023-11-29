@@ -27,6 +27,7 @@ nav a {
     color: #fff;
 }
 
+
 .product-details {
     max-width: 800px;
     margin: 0 auto;
@@ -50,9 +51,9 @@ nav a {
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: white;
+    color: rgb(128, 1, 1);
     font-weight: bold;
-    font-size: 18px;
+    font-size: 28px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
 }
@@ -97,7 +98,7 @@ button {
     font-size: 16px;
 }
 
-.product-details p{
+.product-details p.descricao{
     text-align: justify;
     text-indent: 25px;
 }

@@ -22,15 +22,19 @@
         </nav>
     </header>
 
+    <section class="return">
+        <a href="all.html"><img src="../assets/icons/left-arrow.png" alt=""> voltar</a>
+    </section>
+
     <section class="product-details">
         <div class="slideshow-container">
             <!-- Imagens do produto -->
             <div class="mySlides fade">
-                <img src="../assets/images/ddg_cover2.webp" alt="Produto 1">
+                <img src="../assets/images/covers_details/ddg_cover2.webp" alt="Produto 1">
             </div>
 
             <div class="mySlides fade">
-                <img src="../assets/images/ddg_cover1.webp" alt="Produto 1">
+                <img src="../assets/images/covers_details/ddg_cover1.webp" alt="Produto 1">
             </div>
 
             <!-- Adicione mais imagens conforme necessário -->
@@ -41,19 +45,18 @@
         </div>
 
         <h1>CD - Depois da guerra Oficina g3</h1>
-        <p><span style="font-weight: 600;">Depois da Guerra</span> foi lançado em dezembro de 2008. sendo produzido totalmente para as linhas vocais de Juninho Afram; nesse ínterim a entrada de Mauro Henrique foi anunciada, e o CD sofreu algumas mudanças para ser adaptado à sua voz, além de novas faixas e mudança na ordem das músicas. Duca Tambasco, na época, afirmou, em entrevistas, que o álbum seguiria a proposta progressiva de Além do que os Olhos Podem Ver, porém com mais influências do metal.</p>
+        <p class="descricao"><span style="font-weight: 600;">Depois da Guerra</span> foi lançado em dezembro de 2008. sendo produzido totalmente para as linhas vocais de Juninho Afram; nesse ínterim a entrada de Mauro Henrique foi anunciada, e o CD sofreu algumas mudanças para ser adaptado à sua voz, além de novas faixas e mudança na ordem das músicas. Duca Tambasco, na época, afirmou, em entrevistas, que o álbum seguiria a proposta progressiva de Além do que os Olhos Podem Ver, porém com mais influências do metal.</p>
         <span >Fonte: wikipedia</span> 
 
-        <p>Preço: R$99,99</p>
+        <p>Preço: R$ 69,99</p>
 
         <label for="quantity">Quantidade:</label>
         <input type="number" id="quantity" name="quantity" min="1" value="1">
 
         <p>Formas de Pagamento:</p>
         <ul>
-            <li>Cartão de Crédito</li>
-            <li>Boleto Bancário</li>
-            <!-- Adicione mais formas de pagamento conforme necessário -->
+            <li><img src="../assets/icons/sem-contato.png" alt=""> Cartão de Crédito</li>
+            <li><img src="../assets/icons/fatura.png" alt=""> Boleto Bancário</li>
         </ul>
 
         <button onclick="confirmPurchase()">Confirmar Compra</button>
