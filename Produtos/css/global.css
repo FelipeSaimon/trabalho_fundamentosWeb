@@ -34,7 +34,6 @@ nav a {
 }
 
 .card {
-    position: relative;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -44,10 +43,24 @@ nav a {
 }
 
 .card img{
-    position: relative;
     margin: 0;
     padding: 0;
     width: 200px;
+    border-radius: 5px 5px 0 0;
+}
+
+.card button{
+    width: 140px;
+    height: 40px;
+    
+    border: none;
+    border-radius: 10px;
+
+    background-color: #333;
+    color: #eee;
+
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .footer{
@@ -55,9 +68,10 @@ nav a {
     background-color: #333;
     color: #fff;
     padding: 10px;
-    bottom: 0;
+    /* bottom: 0; */
     width: 100%;
-    text-align: center  ;
+    height: 50px;
+    text-align: center;
 }
 
 /* Adicione estilos responsivos conforme necessário */
