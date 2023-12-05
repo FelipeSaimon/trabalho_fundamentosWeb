@@ -5,13 +5,15 @@
 }
 
 .slideshow-container {
-    max-width: 100%;
+    width: 100%;
     position: relative;
     margin-bottom: 20px;
 }
 
 .mySlides {
     display: none;
+    width: 100%;
+    text-align: center;
 }
 
 .prev, .next {
@@ -19,7 +21,7 @@
     position: absolute;
     top: 50%;
     width: auto;
-    padding: 16px;
+    padding: 8px;
     margin-top: -22px;
     color: rgb(128, 1, 1);
     font-weight: bold;

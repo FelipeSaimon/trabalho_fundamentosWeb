@@ -6,15 +6,21 @@
     <link rel="stylesheet" href="../css/globals.css">
 
     <link rel="stylesheet" href="css/produto.css">
-
+    <link rel="stylesheet" href="css/hamburguer.css">
+    <link rel="stylesheet" href="../css/medias_responsiveis.css">
     
     <title>Detalhes do Produto</title>
 
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="links" id="navbarLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#sobre">Sobre Nós</a></li>
                 <li><a href="#noticias">Notícias</a></li>
@@ -32,11 +38,11 @@
         <div class="slideshow-container">
             <!-- Imagens do produto -->
             <div class="mySlides fade">
-                <img src="../assets/images/covers_details/dvd_illusion_1.jpg" alt="Produto 1">
+                <img class="cover" src="../assets/images/covers_details/dvd_illusion_1.jpg" alt="Produto 1">
             </div>
 
             <div class="mySlides fade">
-                <img src="../assets/images/covers_details/dvd_illusion_2.jpg" alt="Produto 1">
+                <img class="cover" src="../assets/images/covers_details/dvd_illusion_2.jpg" alt="Produto 1">
             </div>
 
             <!-- Adicione mais imagens conforme necessário -->
@@ -81,12 +87,14 @@
         function showSlides(n) {
             var i;
             var slides = document.getElementsByClassName("mySlides");
+            let coverImage = document.getElementsByClassName("cover")
             if (n > slides.length) { slideIndex = 1 }
             if (n < 1) { slideIndex = slides.length }
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
             slides[slideIndex - 1].style.display = "block";
+            coverImage[slideIndex - 1].style.width = "100%"
         }
 
         function plusSlides(n) {

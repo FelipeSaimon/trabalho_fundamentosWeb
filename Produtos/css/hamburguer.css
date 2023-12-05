@@ -1,0 +1,35 @@
+.navbar-toggle {
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+}
+
+.bar {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+
+}
+
+@media screen and (max-width: 768px) {
+    .navbar a {
+        text-align: center;
+    }
+
+    .links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .links.show {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .navbar-toggle {
+        display: flex;
+        align-items: flex-end;
+    }
+}

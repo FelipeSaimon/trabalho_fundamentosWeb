@@ -1,3 +1,6 @@
+body{
+    width: 100%;
+}
 
 .cards {
     display: flex;
@@ -40,15 +43,4 @@
     font-weight: 500;
 
     cursor: pointer;
-}
-
-/* Adicione estilos responsivos conforme necessário */
-@media screen and (max-width: 768px) {
-    .cards {
-        justify-content: center;
-    }
-
-    .card {
-        width: 100%;
-    }
 }
