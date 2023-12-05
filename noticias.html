@@ -6,23 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/globals.css">
     <link rel="stylesheet" href="css/noticias.css">
+    <link rel="stylesheet" href="Produtos/css/hamburguer.css">
+
     <title>Noticias</title>
 </head>
 
 <body>
 
-
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../sobre.html">Sobre Nós</a></li>
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="links" id="navbarLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Produtos/all.html">Produtos</a></li>
+                <li><a href="../sobre.html" disabled>Sobre Nós</a></li>
                 <li><a href="../noticias.html">Notícias</a></li>
                 <li><a href="../faleconosco.html">Contato</a></li>
                 <li><a href="../projeto.html">O Projeto</a></li>
             </ul>
         </nav>
     </header>
+
 
     <section class="container">
         <h1>Noticias</h1>
@@ -71,6 +79,9 @@
             <span>copyright &copy; </span> <span>Saimon - Devciente 2023</span>
         </footer>
     </section>
+
+    <script src="../js/hamb.js"></script>
+
 </body>
 
 </html>

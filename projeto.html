@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/globals.css">
+    <link rel="stylesheet" href="Produtos/css/hamburguer.css">
 
     <title>O projeto</title>
 </head>
 <body>
     
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../sobre.html">Sobre Nós</a></li>
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="links" id="navbarLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Produtos/all.html">Produtos</a></li>
+                <li><a href="../sobre.html" disabled>Sobre Nós</a></li>
                 <li><a href="../noticias.html">Notícias</a></li>
                 <li><a href="../faleconosco.html">Contato</a></li>
                 <li><a href="../projeto.html">O Projeto</a></li>
@@ -23,7 +30,7 @@
 
     <section class="row">
         <div class="col-10 mx-auto mt-5 ">
-            
+            <h1>O projeto</h1>
         </div>
     </section>
 
@@ -33,5 +40,8 @@
         </footer>
     </section>
     
+
+    <script src="../js/hamb.js"></script>
+
 </body>
 </html>
