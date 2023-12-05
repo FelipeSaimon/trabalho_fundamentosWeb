@@ -24,73 +24,80 @@
                 <div class="bar"></div>
             </div>
             <ul class="links" id="navbarLinks">
-                <li><a href="all.html">Home</a></li>
-                <li><a href="#sobre">Sobre Nós</a></li>
-                <li><a href="#noticias">Notícias</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="#projeto">O Projeto</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="all.html">Produtos</a></li>
+                <li><a href="../sobre.html">Sobre Nós</a></li>
+                <li><a href="../noticias.html">Notícias</a></li>
+                <li><a href="../faleconosco.html">Contato</a></li>
+                <li><a href="../projeto.html">O Projeto</a></li>
             </ul>
         </nav>
     </header>
+    <main class="container-master">
+        
+        <section class="product-details">
+            <div class="slideshow-container">
+                <!-- Imagens do produto -->
+                <div class="mySlides fade">
+                    <img class="cover" src="../assets/images/covers_details/JH_1.jpg" alt="Produto 1">
+                </div>
 
-    <section class="return">
-        <a href="all.html"><img src="../assets/icons/left-arrow.png" alt=""> voltar</a>
-    </section>
+                <div class="mySlides fade">
+                    <img class="cover" src="../assets/images/covers_details/JH_2.jpg" alt="Produto 1">
+                </div>
 
-    <section class="product-details">
-        <div class="slideshow-container">
-            <!-- Imagens do produto -->
-            <div class="mySlides fade">
-                <img class="cover" src="../assets/images/covers_details/JH_1.jpg" alt="Produto 1">
+                <!-- Controles de navegação do slideshow -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
 
-            <div class="mySlides fade">
-                <img class="cover" src="../assets/images/covers_details/JH_2.jpg" alt="Produto 1">
-            </div>
+            <h1>CD - Are you Experienced <br> Jimi Hendrix</h1>
+            <p class="descricao">É o álbum de estúdio de estreia da banda de rock anglo-americano The Jimi Hendrix
+                Experience.
+                Lançado em 1967, o LP foi um sucesso imediato de público e crítica, e é amplamente considerado como um
+                dos
+                maiores debuts da história do rock.</p>
+            <span>Fonte: wikipedia</span>
 
-            <!-- Controles de navegação do slideshow -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
+            <p>Preço: R$99,99</p>
 
-        <h1>CD - Are you Experienced <br> Jimi Hendrix</h1>
-        <p class="descricao">É o álbum de estúdio de estreia da banda de rock anglo-americano The Jimi Hendrix Experience.
-            Lançado em 1967, o LP foi um sucesso imediato de público e crítica, e é amplamente considerado como um dos
-            maiores debuts da história do rock.</p>
-        <span>Fonte: wikipedia</span>
+            <label for="quantity">Quantidade:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
 
-        <p>Preço: R$99,99</p>
+            <p>Formas de Pagamento:</p>
+            <ul>
+                <li><img src="../assets/icons/sem-contato.png" alt=""> Cartão de Crédito</li>
+                <li><img src="../assets/icons/fatura.png" alt=""> Boleto Bancário</li>
+                <!-- Adicione mais formas de pagamento conforme necessário -->
+            </ul>
 
-        <label for="quantity">Quantidade:</label>
-        <input type="number" id="quantity" name="quantity" min="1" value="1">
+            <button onclick="confirmPurchase()">Confirmar Compra</button>
+        </section>
 
-        <p>Formas de Pagamento:</p>
-        <ul>
-            <li><img src="../assets/icons/sem-contato.png" alt=""> Cartão de Crédito</li>
-            <li><img src="../assets/icons/fatura.png" alt=""> Boleto Bancário</li>
-            <!-- Adicione mais formas de pagamento conforme necessário -->
-        </ul>
+        <!-- " -->
 
-        <button onclick="confirmPurchase()">Confirmar Compra</button>
-    </section>
+        <section class="faixas">
+            <h3>faixas</h3>
+            <ul class="lead" style="list-style: none;">
+                <li>"Purple Haze" - 2:51</li>
+                <li>"Manic Depression" - 3:42</li>
+                <li>"Hey Joe" (Billy Roberts) - 3:30</li>
+                <li>"Love or Confusion" - 3:11</li>
+                <li>"May This Be Love" - 3:11</li>
+                <li>"I Don't Live Today" - 3:55</li>
+                <li>"The Wind Cries Mary" - 3:20</li>
+                <li>"Fire" - 2:43</li>
+                <li>"Third Stone from the Sun" - 6:44</li>
+                <li>"Foxy Lady" - 3:19</li>
+                <li>"Are You Experienced?" - 4:16</li>
+            </ul>
+        </section>
+    </main>
 
-    <!-- " -->
-
-    <section class="faixas">
-        <h3 >faixas</h3>
-        <ul class="lead" style="list-style: none;">
-            <li>"Purple Haze" - 2:51</li>
-            <li>"Manic Depression" - 3:42</li>
-            <li>"Hey Joe" (Billy Roberts) - 3:30</li>
-            <li>"Love or Confusion" - 3:11</li>
-            <li>"May This Be Love" - 3:11</li>
-            <li>"I Don't Live Today" - 3:55</li>
-            <li>"The Wind Cries Mary" - 3:20</li>
-            <li>"Fire" - 2:43</li>
-            <li>"Third Stone from the Sun" - 6:44</li>
-            <li>"Foxy Lady" - 3:19</li>
-            <li>"Are You Experienced?" - 4:16</li>
-        </ul>
+    <section class="row">
+        <footer class="footer">
+            <span>copyright &copy; </span> <span>Saimon - Devciente 2023</span>
+        </footer>
     </section>
 
     <script>
@@ -117,7 +124,7 @@
         showSlides(slideIndex);
     </script>
 
-<script src="../js/hamb.js"></script>
+    <script src="../js/hamb.js"></script>
 </body>
 
 </html>

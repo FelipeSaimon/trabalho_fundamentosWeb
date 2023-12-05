@@ -23,25 +23,21 @@
                 <div class="bar"></div>
             </div>
             <ul class="links" id="navbarLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre Nós</a></li>
-                <li><a href="#noticias">Notícias</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="#projeto">O Projeto</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="all.html">Produtos</a></li>
+                <li><a href="../sobre.html">Sobre Nós</a></li>
+                <li><a href="../noticias.html">Notícias</a></li>
+                <li><a href="../faleconosco.html">Contato</a></li>
+                <li><a href="../projeto.html">O Projeto</a></li>
             </ul>
         </nav>
     </header>
-
-    <main class="container">
-        <section class="return">
-            <a href="all.html"><img src="../assets/icons/left-arrow.png" alt=""> voltar</a>
-        </section>
-
+    <main class="container-master">
         <section class="product-details">
             <div class="slideshow-container">
                 <!-- Imagens do produto -->
                 <div class="mySlides fade">
-                    <img src="../assets/images/covers_details/ind_1.webp" alt="Produto 1">
+                    <img class="cover" src="../assets/images/covers_details/ind_1.webp" alt="Produto 1">
                 </div>
 
                 <div class="mySlides fade">
@@ -106,6 +102,12 @@
         </section>
     </main>
 
+    <section class="row">
+        <footer class="footer">
+            <span>copyright &copy; </span> <span>Saimon - Devciente 2023</span>
+        </footer>
+    </section>
+
     <script>
         // Funções para o slideshow
         var slideIndex = 1;
@@ -129,6 +131,8 @@
 
         showSlides(slideIndex);
     </script>
+
+<script src="../js/hamb.js"></script>
 
 </body>
 

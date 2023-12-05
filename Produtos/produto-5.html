@@ -23,79 +23,87 @@
                 <div class="bar"></div>
             </div>
             <ul class="links" id="navbarLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre Nós</a></li>
-                <li><a href="#noticias">Notícias</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="#projeto">O Projeto</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="all.html">Produtos</a></li>
+                <li><a href="../sobre.html">Sobre Nós</a></li>
+                <li><a href="../noticias.html">Notícias</a></li>
+                <li><a href="../faleconosco.html">Contato</a></li>
+                <li><a href="../projeto.html">O Projeto</a></li>
             </ul>
         </nav>
     </header>
+    <main class="container-master">
+        <section class="product-details">
+            <div class="slideshow-container">
+                <!-- Imagens do produto -->
+                <div class="mySlides fade">
+                    <img class="cover" src="../assets/images/covers_details/nvnn1.webp" alt="Produto 1">
+                </div>
 
-    <section class="return">
-        <a href="all.html"><img src="../assets/icons/left-arrow.png" alt=""> voltar</a>
-    </section>
+                <div class="mySlides fade">
+                    <img class="cover" src="../assets/images/covers_details/nvnn2.jpg" alt="Produto 1">
+                </div>
 
-    <section class="product-details">
-        <div class="slideshow-container">
-            <!-- Imagens do produto -->
-            <div class="mySlides fade">
-                <img class="cover" src="../assets/images/covers_details/nvnn1.webp" alt="Produto 1">
+                <!-- Controles de navegação do slideshow -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
 
-            <div class="mySlides fade">
-                <img class="cover" src="../assets/images/covers_details/nvnn2.jpg" alt="Produto 1">
-            </div>
+            <h1>Nada é tao velho, nada é tão novo <br> Oficina g3</h1>
+            <p class="descricao">
+                Nada é tão novo, nada é tão velho é o primeiro álbum de estúdio da banda de rock cristão Oficina G3,
+                lançado
+                em LP em 1993 e em CD em 1994 pela gravadora Gospel Records. O estilo do álbum é, em grande parte, hard
+                rock, e a sonoridade do álbum pode ser comparada a de grupos como Deep Purple e Petra. É o último
+                trabalho
+                com a participação do baixista Wagner Garcia (vulgo Maradona), que deixou a banda pouco tempo
+                depois.[carece
+                de fontes] Ao mesmo tempo, é o primeiro álbum com a participação do baixista Duca Tambasco, responsável
+                pelas 4 últimas faixas da versão em CD (regravações do primeiro disco, Ao Vivo). Em 2018, foi
+                considerado o
+                70º melhor álbum da década de 1990, de acordo com lista publicada pelo Super Gospel.
+            </p>
 
-            <!-- Controles de navegação do slideshow -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
+            <p>Preço: R$ 92,99</p>
 
-        <h1>Nada é tao velho, nada é tão novo <br> Oficina g3</h1>
-        <p class="descricao">
-            Nada é tão novo, nada é tão velho é o primeiro álbum de estúdio da banda de rock cristão Oficina G3, lançado
-            em LP em 1993 e em CD em 1994 pela gravadora Gospel Records. O estilo do álbum é, em grande parte, hard
-            rock, e a sonoridade do álbum pode ser comparada a de grupos como Deep Purple e Petra. É o último trabalho
-            com a participação do baixista Wagner Garcia (vulgo Maradona), que deixou a banda pouco tempo depois.[carece
-            de fontes] Ao mesmo tempo, é o primeiro álbum com a participação do baixista Duca Tambasco, responsável
-            pelas 4 últimas faixas da versão em CD (regravações do primeiro disco, Ao Vivo). Em 2018, foi considerado o
-            70º melhor álbum da década de 1990, de acordo com lista publicada pelo Super Gospel.
-        </p>
+            <label for="quantity">Quantidade:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
 
-        <p>Preço: R$ 92,99</p>
-
-        <label for="quantity">Quantidade:</label>
-        <input type="number" id="quantity" name="quantity" min="1" value="1">
-
-        <p>Formas de Pagamento:</p>
-        <ul>
-            <li><img src="../assets/icons/sem-contato.png" alt=""> Cartão de Crédito</li>
-            <li><img src="../assets/icons/fatura.png" alt=""> Boleto Bancário</li>
-        </ul>
-
-        <button onclick="confirmPurchase()">Confirmar Compra</button>
-    </section>
-
-    <section class="row">
-        <div class="col-8 mx-auto">
-            <h3>Faixas</h3>
+            <p>Formas de Pagamento:</p>
             <ul>
-                <li>"Mais que Vencedores" - 04:03</li>
-                <li>"Pastor" - 04:32</li>
-                <li>"Resposta de Deus" - 04:16</li>
-                <li>"Valéria" - 3:23</li>
-                <li>"Razão" - 04:09</li>
-                <li>"Deus Eterno" - 03:15</li>
-                <li>"Consciência de Liberdade" - 05:18</li>
-                <li>"Perfeita União" - 04:36</li>
-                <li>"Naves Imperiais" - 04:45</li>
-                <li>"Cante" - 02:13 </li>
-                <li>"Viver por Fé" - 03:35</li>
-                <li>"Parar e Pensar" - 02:50</li>
+                <li><img src="../assets/icons/sem-contato.png" alt=""> Cartão de Crédito</li>
+                <li><img src="../assets/icons/fatura.png" alt=""> Boleto Bancário</li>
             </ul>
 
-        </div>
+            <button onclick="confirmPurchase()">Confirmar Compra</button>
+        </section>
+
+        <section class="row">
+            <div class="col-8 mx-auto">
+                <h3>Faixas</h3>
+                <ul>
+                    <li>"Mais que Vencedores" - 04:03</li>
+                    <li>"Pastor" - 04:32</li>
+                    <li>"Resposta de Deus" - 04:16</li>
+                    <li>"Valéria" - 3:23</li>
+                    <li>"Razão" - 04:09</li>
+                    <li>"Deus Eterno" - 03:15</li>
+                    <li>"Consciência de Liberdade" - 05:18</li>
+                    <li>"Perfeita União" - 04:36</li>
+                    <li>"Naves Imperiais" - 04:45</li>
+                    <li>"Cante" - 02:13 </li>
+                    <li>"Viver por Fé" - 03:35</li>
+                    <li>"Parar e Pensar" - 02:50</li>
+                </ul>
+
+            </div>
+        </section>
+    </main>
+
+    <section class="row">
+        <footer class="footer">
+            <span>copyright &copy; </span> <span>Saimon - Devciente 2023</span>
+        </footer>
     </section>
 
     <script>
@@ -121,6 +129,8 @@
 
         showSlides(slideIndex);
     </script>
+
+<script src="../js/hamb.js"></script>
 
 </body>
 

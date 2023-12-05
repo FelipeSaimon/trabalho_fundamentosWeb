@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,11 @@
     <link rel="stylesheet" href="css/produto.css">
     <link rel="stylesheet" href="css/hamburguer.css">
     <link rel="stylesheet" href="../css/medias_responsiveis.css">
-    
+
     <title>Detalhes do Produto</title>
 
 </head>
+
 <body>
     <header class="header">
         <nav class="navbar">
@@ -21,78 +23,88 @@
                 <div class="bar"></div>
             </div>
             <ul class="links" id="navbarLinks">
-                <li><a href="all.html">Home</a></li>
-                <li><a href="#sobre">Sobre Nós</a></li>
-                <li><a href="#noticias">Notícias</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="#projeto">O Projeto</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="all.html">Produtos</a></li>
+                <li><a href="../sobre.html">Sobre Nós</a></li>
+                <li><a href="../noticias.html">Notícias</a></li>
+                <li><a href="../faleconosco.html">Contato</a></li>
+                <li><a href="../projeto.html">O Projeto</a></li>
             </ul>
         </nav>
     </header>
+    <main class="container-master">
 
-    <section class="return">
-        <a href="all.html"><img src="../assets/icons/left-arrow.png" alt=""> voltar</a>
-    </section>
+        <section class="product-details">
+            <div class="slideshow-container">
+                <!-- Imagens do produto -->
+                <div class="mySlides fade">
+                    <img class="cover" src="../assets/images/covers_details/ddg_cover2.webp" alt="Produto 1">
+                </div>
 
-    <section class="product-details">
-        <div class="slideshow-container">
-            <!-- Imagens do produto -->
-            <div class="mySlides fade">
-                <img class="cover" src="../assets/images/covers_details/ddg_cover2.webp" alt="Produto 1">
+                <div class="mySlides fade">
+                    <img class="cover" src="../assets/images/covers_details/ddg_cover1.webp" alt="Produto 1">
+                </div>
+
+                <!-- Adicione mais imagens conforme necessário -->
+
+                <!-- Controles de navegação do slideshow -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
 
-            <div class="mySlides fade">
-                <img class="cover" src="../assets/images/covers_details/ddg_cover1.webp" alt="Produto 1">
+            <h1>CD - Depois da guerra Oficina g3</h1>
+            <p class="descricao"><span style="font-weight: 600;">Depois da Guerra</span> foi lançado em dezembro de
+                2008. sendo produzido totalmente para as linhas vocais de Juninho Afram; nesse ínterim a entrada de
+                Mauro Henrique foi anunciada, e o CD sofreu algumas mudanças para ser adaptado à sua voz, além de novas
+                faixas e mudança na ordem das músicas. Duca Tambasco, na época, afirmou, em entrevistas, que o álbum
+                seguiria a proposta progressiva de Além do que os Olhos Podem Ver, porém com mais influências do metal.
+            </p>
+            <span>Fonte: wikipedia</span>
+
+            <p>Preço: R$ 69,99</p>
+
+            <label for="quantity">Quantidade:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+            <p>Formas de Pagamento:</p>
+            <ul>
+                <li><img src="../assets/icons/sem-contato.png" alt=""> Cartão de Crédito</li>
+                <li><img src="../assets/icons/fatura.png" alt=""> Boleto Bancário</li>
+            </ul>
+
+            <button onclick="confirmPurchase()">Confirmar Compra</button>
+        </section>
+
+
+        <section class="row">
+            <div class="col-8 mx-auto">
+                <h3>Faixas</h3>
+                <ul style="list-style: none;">
+                    <li>"D.A.G." - 1:07</li>
+                    <li>“Meus Próprios Meios" - 4:55</li>
+                    <li>"Eu Sou" - 5:55</li>
+                    <li>"Meus Passos" - 5:06</li>
+                    <li>"Continuar" - 4:30</li>
+                    <li>"De Joelhos" - 5:22</li>
+                    <li>"Tua Mão" - 4:29</li>
+                    <li>"Muros" - 5:01</li>
+                    <li>"Depois da Guerra" (D.D.G.) - 4:57</li>
+                    <li>"A Ele" - 4:42</li>
+                    <li>"Incondicional" - 4:18</li>
+                    <li>"Obediência" - 5:07</li>
+                    <li>"Better" - 6:24</li>
+                    <li>"People Get Ready" - 4:03</li>
+                    <li>"Unconditional" - 4:15</li>
+                </ul>
+
             </div>
-
-            <!-- Adicione mais imagens conforme necessário -->
-
-            <!-- Controles de navegação do slideshow -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-
-        <h1>CD - Depois da guerra Oficina g3</h1>
-        <p class="descricao"><span style="font-weight: 600;">Depois da Guerra</span> foi lançado em dezembro de 2008. sendo produzido totalmente para as linhas vocais de Juninho Afram; nesse ínterim a entrada de Mauro Henrique foi anunciada, e o CD sofreu algumas mudanças para ser adaptado à sua voz, além de novas faixas e mudança na ordem das músicas. Duca Tambasco, na época, afirmou, em entrevistas, que o álbum seguiria a proposta progressiva de Além do que os Olhos Podem Ver, porém com mais influências do metal.</p>
-        <span >Fonte: wikipedia</span> 
-
-        <p>Preço: R$ 69,99</p>
-
-        <label for="quantity">Quantidade:</label>
-        <input type="number" id="quantity" name="quantity" min="1" value="1">
-
-        <p>Formas de Pagamento:</p>
-        <ul>
-            <li><img src="../assets/icons/sem-contato.png" alt=""> Cartão de Crédito</li>
-            <li><img src="../assets/icons/fatura.png" alt=""> Boleto Bancário</li>
-        </ul>
-
-        <button onclick="confirmPurchase()">Confirmar Compra</button>
-    </section>
-
+        </section>
+    </main>
 
     <section class="row">
-        <div class="col-8 mx-auto">
-            <h3>Faixas</h3>
-            <ul style="list-style: none;">
-                <li>"D.A.G." - 1:07</li>
-                <li>“Meus Próprios Meios" - 4:55</li>
-                <li>"Eu Sou" - 5:55</li>
-                <li>"Meus Passos" - 5:06</li>
-                <li>"Continuar" - 4:30</li>
-                <li>"De Joelhos" - 5:22</li>
-                <li>"Tua Mão" - 4:29</li>
-                <li>"Muros" - 5:01</li>
-                <li>"Depois da Guerra" (D.D.G.) - 4:57</li>
-                <li>"A Ele" - 4:42</li>
-                <li>"Incondicional" - 4:18</li>
-                <li>"Obediência" - 5:07</li>
-                <li>"Better" - 6:24</li>
-                <li>"People Get Ready" - 4:03</li>
-                <li>"Unconditional" - 4:15</li>
-            </ul>
-            
-        </div>
+        <footer class="footer">
+            <span>copyright &copy; </span> <span>Saimon - Devciente 2023</span>
+        </footer>
     </section>
 
     <script>
@@ -119,5 +131,8 @@
         showSlides(slideIndex);
     </script>
 
+<script src="../js/hamb.js"></script>
+
 </body>
+
 </html>
