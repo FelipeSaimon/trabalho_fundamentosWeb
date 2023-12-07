@@ -1,0 +1,60 @@
+
+@media screen and (max-width: 720px) {
+    body {
+
+        /* PRODUTOS */
+        .cards {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .card {
+            width: 100%;
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        .card .descricao {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 h2 p {
+            font-size: 100%;
+        }
+
+        .product-details {
+            width: 100%;
+            margin: auto;
+         }
+ 
+         /* NOTICIAS */
+         .container-page_noticias{
+             width: 100%;
+         }
+ 
+         .cards_noticias-container{
+             width: 100%;
+             padding: 15px;
+         }
+
+
+        /* CONTATO - FALE CONOSCO */
+
+        @media screen and (max-width: 720px) {
+            .contato-master{
+                /* box-shadow: none; */
+                margin: 10px;
+            }
+            .container-contato {
+                width: 100%;
+                box-shadow: none;
+            }
+        }
+
+        /* O PROJETO */
+    }
+}

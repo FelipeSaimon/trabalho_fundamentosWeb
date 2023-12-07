@@ -1,0 +1,36 @@
+
+@media screen and (max-width: 1024px) {
+    body {
+
+        /* PRODUTOS */
+        .cards {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .card {
+            width: 100%;
+        }
+
+        .product-details {
+           width: 100%;
+           margin: auto;
+        }
+
+        /* NOTICIAS */
+        .container-page_noticias{
+            /* width: 100%; */
+            margin: 30px;
+        }
+
+        .cards_noticias-container{
+            width: 100%;
+            padding: 15px;
+        }
+
+        .card-noticia img{
+            width: 100%;
+        }
+
+    }
+} 
