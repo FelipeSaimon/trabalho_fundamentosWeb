@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,12 @@
     <link rel="stylesheet" href="Produtos/css/hamburguer.css">
 
     <style>
-        .container {
-            height: auto;
+        body {
+            height: 100vh;
+        }
 
+        .container-projeto {
+            
             margin: 50px;
             padding: 25px;
 
@@ -19,19 +23,25 @@
             box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
         }
 
-        .container p {
+        .container-projeto p {
             width: auto;
             text-align: justify;
             text-wrap: wrap;
             text-indent: 30px;
+        }
+
+        .footer {
+            position: relative;
+            bottom: 0;
         }
     </style>
 
 
     <title>O projeto</title>
 </head>
+
 <body>
-    
+
     <header class="header">
         <nav class="navbar">
             <div class="navbar-toggle" onclick="toggleMenu()">
@@ -50,10 +60,18 @@
         </nav>
     </header>
 
-    <section>
-        <div class="container">
+    <section class="container-projeto">
+        <div>
             <h1>O projeto</h1>
-            Discoteca retrô foi idealizado para os amantes da boa musica e que ama ter a coleção de discos/CDs completas. Para tal criamos nossa loja virtual que visa passar a nostalgia e sensação de estar vivendo momentos que já se foram.
+            Discoteca retrô foi idealizado para os amantes da boa musica e que ama ter a coleção de discos/CDs
+            completas. Para tal criamos nossa loja virtual que visa passar a nostalgia e sensação de estar vivendo
+            momentos que já se foram.
+        </div>
+
+        <div>
+            <h1>Público alvo</h1>
+            <p>Pessas que sempre foram amantes da boa música e de qualidade.</p>
+            <p>Considerando que o mundo atualmente estar totalmente digitalidade e, que a maioria vem buscando ouvi suas musicas online, ainda tem os remanescentes que anseiam em abri a capa de um cd e inserir em um cdrom para ouvi seu som favorito</p>
         </div>
     </section>
 
@@ -62,9 +80,10 @@
             <span>copyright &copy; </span> <span>Saimon - Devciente 2023</span>
         </footer>
     </section>
-    
+
 
     <script src="../js/hamb.js"></script>
 
 </body>
+
 </html>

@@ -1,4 +1,3 @@
-
 @media screen and (max-width: 720px) {
     body {
 
@@ -29,32 +28,62 @@
         .product-details {
             width: 100%;
             margin: auto;
-         }
- 
-         /* NOTICIAS */
-         .container-page_noticias{
-             width: 100%;
-         }
- 
-         .cards_noticias-container{
-             width: 100%;
-             padding: 15px;
-         }
+        }
+
+        /* NOTICIAS */
+
+        .cards_noticias-container {
+            width: 100%;
+            /* padding: 15px; */
+            margin: 0;
+
+        }
+
+        .cards_noticias-container h1,
+        .cards_noticias-container h2 {
+            font-size: 100%;
+        }
+
+        .cards_noticias-container p {
+            font-size: 100%;
+
+        }
+
+
 
 
         /* CONTATO - FALE CONOSCO */
 
-        @media screen and (max-width: 720px) {
-            .contato-master{
-                /* box-shadow: none; */
-                margin: 10px;
-            }
-            .container-contato {
-                width: 100%;
-                box-shadow: none;
-            }
+        .contato-master {
+            /* box-shadow: none; */
+            margin: 10px;
+        }
+
+        .container-contato {
+            /* width: 100%; */
+            box-shadow: none;
         }
 
         /* O PROJETO */
+        .container-projeto{
+            width: 100%;
+            margin: 20px;
+        }
+
+        /* INDEX.HTML */
+        .container-index a {
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: auto;
+
+            margin: auto;
+
+        }
+
+        .container-index a img {
+            width: 100%;
+        }
+
     }
 }
