@@ -1,24 +1,27 @@
+.container-sobre {
+    position: relative;
 
-.container{
+    max-width: 1024px;
     height: auto;
 
     margin: 50px;
+    margin-inline: auto;
     padding: 25px;
-    
-    background-color: #eee; 
+
+    background-color: #eee;
 
     border-radius: 6px;
     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
 }
 
-.container p{
+.container-sobre p {
     width: auto;
     text-align: justify;
     text-wrap: wrap;
     text-indent: 30px;
 }
 
-.empresa{
+.empresa {
     text-align: right;
     font-weight: 500;
 }

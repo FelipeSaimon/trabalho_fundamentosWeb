@@ -2,136 +2,162 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="css/globals.css">
-  <link rel="stylesheet" href="Produtos/css/hamburguer.css">
-  <link rel="stylesheet" href="css/responsividade/maxW-1024.css">
-  <link rel="stylesheet" href="css/responsividade/maxW-720.css">
+    <link rel="stylesheet" href="css/globals.css">
 
-  <title>Fale Conosco</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+    <link rel="stylesheet" href="Produtos/css/hamburguer.css">
+    <link rel="stylesheet" href="css/responsividade/maxW-1024.css">
+    <link rel="stylesheet" href="css/responsividade/maxW-720.css">
 
-    .container {
-      /* max-width: 600px; */
-      margin: 20px;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+    <title>Fale Conosco</title>
+    <style>
+        body {
+            font-family: 'roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-    form {
-      display: flex;
-      flex-direction: column;
+        .contato-master {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-    }
+        .form-contato {
+            display: flex;
+            flex-direction: column;
+            /* margin: 30px; */
+        }
 
-    label {
-      margin-top: 10px;
-    }
+        label {
+            margin-top: 10px;
+        }
 
-    input,
-    select,
-    textarea {
-      margin-bottom: 10px;
-      padding: 8px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-    }
+        input,
+        select,
+        textarea {
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
 
-    .botoes {
-      width: 100%;
+        .botoes {
+            margin-top: 20px;
+            width: 100%;
 
-      display: flex;
-      justify-content: space-around;
-    }
+            display: flex;
+            justify-content: space-around;
+        }
 
-    button {
-      width: 100px;
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+        button {
+            background-color: #333;
+            width: 100px;
+            font-size: 1.2rem;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-    button:hover {
-      background-color: #555;
-    }
-  </style>
+        button:hover {
+            background-color: #555;
+        }
+
+        @media screen and (max-width: 430px) {
+
+            .header{
+                width: 100%;
+            }
+
+            .contato-master {
+                width: 100%;
+                padding: auto;
+            }
+
+            .botoes {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+            }
+
+            .botoes button {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-  <header class="header">
-    <nav class="navbar">
-      <div class="navbar-toggle" onclick="toggleMenu()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </div>
-      <ul class="links" id="navbarLinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="Produtos/all.html">Produtos</a></li>
-        <li><a href="sobre.html">Sobre Nós</a></li>
-        <li><a href="noticias.html">Notícias</a></li>
-        <li><a href="faleconosco.html">Contato</a></li>
-        <li><a href="cadastro.html">Cadastro</a></li>
-        <li><a href="projeto.html">O Projeto</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="links" id="navbarLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Produtos/all.html">Produtos</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="noticias.html">Notícias</a></li>
+                <li><a href="faleconosco.html">Contato</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="projeto.html">O Projeto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section class="container">
-    <h1>Fale Conosco</h1>
-    <form id="faleConoscoForm">
-      <label for="email">E-mail do Remetente:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="assunto">Assunto:</label>
-      <input type="text" id="assunto" name="assunto" required>
-      <label for="mensagem">Corpo da Mensagem:</label>
-      <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-      <div class="botoes">
-        <button type="button" onclick="enviarMensagem()">Enviar</button>
-        <button type="button" onclick="limparCampos()">Limpar</button>
-      </div>
-    </form>
-  </section>
+    <section class="contato-master">
+        <h1>Fale Conosco</h1>
+        <form class="form-contato" id="faleConoscoForm">
+            <label for="email">E-mail do Remetente:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto" required>
+            <label for="mensagem">Corpo da Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            <div class="botoes">
+                <button type="button" onclick="enviarMensagem()">Enviar</button>
+                <button type="button" onclick="limparCampos()">Limpar</button>
+            </div>
+        </form>
+    </section>
 
 
-  <script>
-    function enviarMensagem() {
-      // Obter os valores dos campos
-      var remetente = document.getElementById('email').value;
-      var assunto = document.getElementById('assunto').value;
-      var mensagem = document.getElementById('mensagem').value;
+    <script>
+        function enviarMensagem() {
+            // Obter os valores dos campos
+            var remetente = document.getElementById('email').value;
+            var assunto = document.getElementById('assunto').value;
+            var mensagem = document.getElementById('mensagem').value;
 
-      // Aqui você pode adicionar a lógica para enviar a mensagem para o email desejado
+            // Aqui você pode adicionar a lógica para enviar a mensagem para o email desejado
 
-      // Exemplo de exibição no console
-      console.log('Enviando mensagem para:', remetente);
-      console.log('Assunto:', assunto);
-      console.log('Corpo da mensagem:', mensagem);
+            // Exemplo de exibição no console
+            console.log('Enviando mensagem para:', remetente);
+            console.log('Assunto:', assunto);
+            console.log('Corpo da mensagem:', mensagem);
 
-      // Limpar os campos após o envio
-      limparCampos();
-    }
+            // Limpar os campos após o envio
+            limparCampos();
+        }
 
-    function limparCampos() {
-      // Limpar os valores dos campos
-      document.getElementById('email').value = '';
-      document.getElementById('assunto').value = '';
-      document.getElementById('mensagem').value = '';
-    }
-  </script>
+        function limparCampos() {
+            // Limpar os valores dos campos
+            document.getElementById('email').value = '';
+            document.getElementById('assunto').value = '';
+            document.getElementById('mensagem').value = '';
+        }
+    </script>
 
-  <script src="js/hamb.js"></script>
+    <script src="js/hamb.js"></script>
 
 </body>
 

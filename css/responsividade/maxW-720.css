@@ -46,26 +46,22 @@
 
         .cards_noticias-container p {
             font-size: 100%;
-
         }
-
-
 
 
         /* CONTATO - FALE CONOSCO */
-
         .contato-master {
-            /* box-shadow: none; */
-            margin: 10px;
+            box-shadow: none;
+            width: 100%;
+            /* margin: auto; */
         }
 
-        .container-contato {
-            /* width: 100%; */
-            box-shadow: none;
+        .form-contato{
+            width: 100%;
         }
 
         /* O PROJETO */
-        .container-projeto{
+        .container-projeto {
             width: 100%;
             margin: 20px;
         }

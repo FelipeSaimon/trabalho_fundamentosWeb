@@ -4,11 +4,12 @@ body {
     padding: 0;
 }
 
-.container{
-    width: 900px;
+.container-page_noticias{
+    max-width: 1024px;
     text-align: left;
     margin: auto;
-
+    padding: 35px;
+    margin-top: 25px;
     margin-bottom: 50px;
 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -16,7 +17,6 @@ body {
 
 
 h1 {
-
     font-size: 30px;
 }
 
@@ -26,11 +26,13 @@ p{
     margin: 0;
 }
 
-.cards-container {
+.cards_noticias-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 20px;
+
 }
 
 .card-noticia {
